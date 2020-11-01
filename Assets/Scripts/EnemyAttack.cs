@@ -66,10 +66,24 @@ public class EnemyAttack : MonoBehaviour
 
     private void ChasePlayer()
     {
-
+        agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
+    {
+        //Make sure enemy doesn't move
+        agent.SetDestination(transform.position);
+
+        transform.LookAt(player);
+
+        if (!alreadyAttacked)
+        {
+            alreadyAttacked = true;
+            Invoke(nameof(ResetAttack), timeBetwwenAttacks);
+        }
+    }
+
+    private void ResetAttack()
     {
 
     }

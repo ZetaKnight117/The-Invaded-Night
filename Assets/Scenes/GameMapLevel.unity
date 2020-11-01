@@ -2251,6 +2251,7 @@ GameObject:
   - component: {fileID: 308760776}
   - component: {fileID: 308760775}
   - component: {fileID: 308760774}
+  - component: {fileID: 308760777}
   m_Layer: 0
   m_Name: InsectoidFighter
   m_TagString: Untagged
@@ -2314,11 +2315,27 @@ Transform:
   m_GameObject: {fileID: 308760773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.8, y: 15, z: 133.6}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &308760777
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308760773}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &309689563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,6 +3904,7 @@ GameObject:
   - component: {fileID: 581244002}
   - component: {fileID: 581244001}
   - component: {fileID: 581244000}
+  - component: {fileID: 581244003}
   m_Layer: 0
   m_Name: InsectoidFighter (1)
   m_TagString: Untagged
@@ -3949,12 +3967,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581243999}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -127.5, y: 14.6, z: 9.9}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: -127.5, y: 14.6, z: 1.7}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!54 &581244003
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581243999}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &582204782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5350,6 +5384,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687867212}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &700632766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5c929a1e7e6053f499c799f0b76fc965,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762780583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &700632767
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700632766}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &701569034
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,6 +11508,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773526730}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1785351643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7684aa101ccc34e43b3a50a6a375c9b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 172538465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1785351644
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785351643}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1816300240
 GameObject:
   m_ObjectHideFlags: 0
