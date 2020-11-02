@@ -11,6 +11,8 @@ public class EnemyAttack : MonoBehaviour
 
     public LayerMask whatIsHover, whatIsPlayer;
 
+    public float health;
+
     //Patroling
     public Vector3 hoverPoint;
     bool hoverPointSet;
@@ -19,6 +21,7 @@ public class EnemyAttack : MonoBehaviour
     //Attacking
     public float timeBetwwenAttacks;
     bool alreadyAttacked;
+    public GameObject projectile;
 
     //States
     public float sightRange, attackRange;
@@ -78,6 +81,11 @@ public class EnemyAttack : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+
+            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetwwenAttacks);
         }
@@ -85,6 +93,17 @@ public class EnemyAttack : MonoBehaviour
 
     private void ResetAttack()
     {
+        alreadyAttacked = false;
+    }
 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+    }
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
     }
 }
