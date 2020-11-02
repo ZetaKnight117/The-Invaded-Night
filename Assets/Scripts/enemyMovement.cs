@@ -7,7 +7,7 @@ public class enemyMovement : MonoBehaviour
     public GameObject player;
 
     public float speed = 10.0f;
-    public float turnSpeed = 13.0f;
+    
 
 
     public float horizontalInput;
@@ -22,10 +22,9 @@ public class enemyMovement : MonoBehaviour
     void Update()
     {
         transform.LookAt(player.transform);
-        transform.position += transform.forward * 1f * Time.deltaTime;
+        transform.position += 
+           transform.forward * speed * Time.deltaTime;
 
-        transform.Translate(Vector3.forward * Time.deltaTime * turnSpeed * verticalInput);
-
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+        
     }
 }
