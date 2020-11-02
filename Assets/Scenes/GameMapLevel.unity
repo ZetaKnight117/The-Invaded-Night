@@ -2443,6 +2443,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879620032}
+  speed: 10
+  turnSpeed: 13
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!1 &309689563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,6 +4111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879620032}
+  speed: 10
+  turnSpeed: 13
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!1 &582204782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5537,6 +5545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879620032}
+  speed: 10
+  turnSpeed: 13
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!65 &700632769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7196,6 +7208,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7281,6 +7294,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 879620032}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6076b62401ea74dbf00bd4ce49e8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationSpeed: 1
+  Target: {fileID: 1543666628}
+  Player: {fileID: 879620036}
 --- !u!1 &975481552
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,6 +10108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1543666628}
+  - component: {fileID: 1543666629}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -10102,6 +10131,21 @@ Transform:
   m_Father: {fileID: 879620036}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1543666629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543666627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6076b62401ea74dbf00bd4ce49e8f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationSpeed: 1
+  Target: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1 &1546124701
 GameObject:
   m_ObjectHideFlags: 0
@@ -11718,6 +11762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 879620032}
+  speed: 10
+  turnSpeed: 13
+  horizontalInput: 0
+  verticalInput: 0
 --- !u!1 &1816300240
 GameObject:
   m_ObjectHideFlags: 0
@@ -12448,6 +12496,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
+    - target: {fileID: 9500000, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
+    - target: {fileID: 9500000, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 13700002, guid: 317a56890b5c8e74ab1d492a2c7fb608, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
