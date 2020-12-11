@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
 
-       
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+        }
     }
+
+    
 }
