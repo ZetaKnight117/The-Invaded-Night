@@ -9880,7 +9880,8 @@ MonoBehaviour:
   turnSpeed: 13
   horizontalInput: 0
   verticalInput: 0
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 7807626540057406846, guid: e0f2ef58ac4ae424f9ee421436df957e,
+    type: 3}
 --- !u!65 &1393843712
 BoxCollider:
   m_ObjectHideFlags: 0
