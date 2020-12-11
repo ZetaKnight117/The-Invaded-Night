@@ -3869,6 +3869,7 @@ GameObject:
   - component: {fileID: 512127418}
   - component: {fileID: 512127417}
   - component: {fileID: 512127421}
+  - component: {fileID: 512127422}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -3964,6 +3965,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.999999, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &512127422
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512127416}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &542528361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,6 +4180,7 @@ GameObject:
   - component: {fileID: 581244000}
   - component: {fileID: 581244004}
   - component: {fileID: 581244003}
+  - component: {fileID: 581244005}
   m_Layer: 0
   m_Name: InsectoidFighter (1)
   m_TagString: Untagged
@@ -4260,6 +4278,22 @@ MonoBehaviour:
   speed: 6
   horizontalInput: 0
   verticalInput: 0
+--- !u!54 &581244005
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581243999}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &582204782
 GameObject:
   m_ObjectHideFlags: 0
